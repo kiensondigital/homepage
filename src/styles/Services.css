@@ -1,0 +1,100 @@
+#Services {
+    background-color: rgb(233, 233, 233);
+    margin-top: 50px;
+    padding-top: 20px;
+    position: relative;
+    top: -5px; /* Adjust this value to ensure the wave and section connect */
+}
+
+.pricing-cards {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-block: 0;
+}
+
+.card-container {
+    padding-top: 0;
+    width: 250px;
+    border-radius: 10px;
+    margin-block: 0;
+}
+
+.card {
+    background-color: black;
+    padding: 20px 40px;
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 300px;
+    transform: translateY(50px);
+    transition: transform 0.6s;
+    border-radius: 10px;
+}
+.card-container:hover {
+    .card {
+        transform: translateY(-25px);
+    }
+}
+  
+.featured {
+    background-color: #f9fafc;
+    border: 3px solid #e63946;
+}
+  
+.card-title {
+    font-size: 30px;
+    text-underline-offset: 4px;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+  
+.card-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    color: rgb(222, 218, 218);
+}
+  
+.card-features li {
+    margin-bottom: 10px;
+}
+  
+  
+.attribute{
+    position: absolute;
+    bottom: 10px;
+}
+
+.price-container {
+    align-self: center;
+    text-align: center;
+    color: #e63946;
+}
+
+
+.currency {
+    font-size: 18px;
+}
+  
+.amount {
+    font-size: 48px;
+}
+  
+.period {
+    font-size: 18px;
+}
+
+.service-icon {
+    font-size: 30px;
+    margin-block: 15px;
+}
+
+@media (max-width:768px) {
+    .pricing-cards{
+        flex-direction: column;
+    }
+}
+

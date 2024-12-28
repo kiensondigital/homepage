@@ -1,0 +1,165 @@
+#Contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(233, 233, 233);
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: -10px; /* Adjust this value as needed to remove the gap */
+}
+
+/* Ensure any elements within #Contact don’t add spacing */
+.social-icon-list {
+    margin: 0; /* Remove any default margins */
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap');
+:root{
+    --bg-color: rgba(0,213,255,1);
+    --container-bg-color: #010000;
+    --facebook-color:#1778F2;
+    --twitter-color:#1Da1f2;
+    --whatsapp-color:#25D366;
+    --youtube-color:#f00;
+    --container-shadow:2.3px 2.3px 1.9px rgba(0, 0, 0, 0.035),5.4px 5.4px 4.3px rgba(0, 0, 0, 0.048),9.7px 9.7px 7.7px rgba(0, 0, 0, 0.054),16.1px 16.1px 12.8px rgba(0, 0, 0, 0.057),26.5px 26.5px 21.2px rgba(0, 0, 0, 0.062),46.2px 46.2px 37px rgba(0, 0, 0, 0.073),100px 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.social-icon-list{
+    height: 100px;
+    width: 500px;
+    /* border: 1px solid #000; */
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+    align-items: center;
+    column-gap: 20px;
+    padding:  20px;
+    /* box-shadow: var(--container-shadow); */
+    background-color: var(--container-bg-color);
+    margin-block: 50px;
+}
+
+.icon-group{
+    height: 50px;
+    width: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    transition: all 1s ease;
+
+}
+.icon-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon-group .MuiSvgIcon-root {
+    font-size: 24px; /* Adjust the icon size */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .icon-group:hover .MuiSvgIcon-root {
+    transform: scale(1.1); /* Slight zoom on hover */
+    opacity: 1; /* Ensure full visibility */
+  }
+  
+
+
+.icon-group:hover{
+    width: 175px;
+    justify-content: space-around;
+}
+.icon-group:nth-child(1) {
+    border: 2px solid var(--facebook-color);
+}
+.icon-group:nth-child(2) {
+    border: 2px solid var(--twitter-color);
+}
+
+.icon-group:nth-child(3) {
+    border: 2px solid var(--whatsapp-color);
+}
+
+.icon-group:nth-child(4) {
+    border: 2px solid var(--youtube-color);
+}
+
+.icon-group:hover i,
+.icon-group:hover .icon-text{
+    color: #fff;
+}
+
+.icon-group .icon-text{
+    width: 0;
+    overflow: hidden;
+}
+
+.icon-group:hover .icon-text{
+    width: fit-content;
+    transition: width 1s ease;
+}
+
+.icon-group i,
+.icon-group .icon-text{
+    z-index: 2;
+}
+
+.icon-group .icon-bg{
+    position: absolute;
+    height: 110%;
+    width: 110%;
+    border-radius: 10px;
+    clip-path: circle(50% at -100% 50%);
+    z-index: 1;
+}
+
+.icon-group:hover .icon-bg{
+    clip-path: circle(160% at 10% 60%);
+    transition: all 1s ease;
+}
+
+.icon-group:nth-child(1) .icon-bg{
+    background-color: var(--facebook-color);
+}
+.icon-group:nth-child(2) .icon-bg{
+    background-color:  var(--twitter-color);
+}
+
+.icon-group:nth-child(3) .icon-bg{
+    background-color:  var(--whatsapp-color);
+}
+
+.icon-group:nth-child(4) .icon-bg{
+    background-color:  var(--youtube-color);
+}
+@media (max-width:768px) {
+    .social-icon-list{
+        height: 250px;
+        width: 350px;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .icon-group:hover{
+        width: 150px;
+    }
+}
+.attribute{
+    position: absolute;
+    bottom: 10px;
+}
+

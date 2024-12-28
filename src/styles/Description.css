@@ -1,0 +1,204 @@
+.description-container {
+  position: relative; /* Required to position the overlay */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  overflow: hidden; /* Ensure overlay fits within container boundaries */
+
+}
+
+/* Ensure other elements within .description-container are above the overlay */
+.slide-content, .progress-indicator {
+  position: relative;
+  z-index: 1;
+}
+
+/* Additional styling as before */
+.description-box {
+  position: relative; /* Ensure relative positioning for left/right adjustments */
+  /*left: -120px;  Move it 50px to the left (adjust as needed) */
+  width: 90%;
+  
+}
+
+.slide-content {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.svg-animation {
+  flex-shrink: 0; /* Prevent shrinking if space is constrained */
+  width: 300px; /* Explicit width */
+  height: 300px; /* Explicit height */
+  margin-top: 10%;
+}
+
+.description-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .description-block {
+    width: 100%;
+    height: 600px;
+    max-width: 1800px;
+    margin: 20px 0;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 1.2em;
+    opacity: 0;
+    transform: translateX(-300px);
+    transition: opacity 0.5s ease, transform 1s ease;
+    background-color: rgb(235, 231, 226);
+    /*box-shadow: 0 4px 8px rgba(79, 78, 78, 0.7);*/
+  }
+  
+  .description-block.visible {
+    opacity: 1;
+  }
+  
+  .description-block.slide-left.visible {
+    transform: translateX(0);
+  }
+  
+  .description-block.slide-right {
+    transform: translateX(300px);
+  }
+  
+  .description-block.slide-right.visible {
+    transform: translateX(0);
+  }
+
+
+
+  .progress-indicator {
+    position: fixed; /* Fixed position to stay on the side */
+    left: 10px; /* Space from the left edge */
+    top: 50%; /* Centered vertically */
+    transform: translateY(-50%); /* Adjust to truly center */
+    height: 50vh; /* Set height to 50% of the viewport height */
+    z-index: 1000; /* High z-index to stay on top */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack circles vertically */
+    justify-content: space-between; /* Evenly space the circles */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+  }
+  
+  .progress-indicator.visible {
+    opacity: 1; /* Fully visible */
+  }
+  
+  .progress-indicator::before {
+    content: '';
+    position: absolute;
+    left: 50%; /* Center line */
+    top: 0; /* Start from the top */
+    height: 100%; /* Full height of the indicator */
+    width: 2px; /* Thickness of the line */
+    background-color: #000000; /* Line color */
+    transform: translateX(-50%); /* Center the line */
+  }
+  
+  .indicator-circle {
+    background-color: #000000; /* Default circle color */
+    border-radius: 50%; /* Make it circular */
+    width: 20px; /* Circle diameter */
+    height: 20px; /* Circle diameter */
+    transition: background-color 0.3s ease; /* Smooth transition for color change */
+    position: relative;
+    z-index: 1; /* Make sure circles are above the line */
+  }
+  
+  .indicator-circle.active {
+    background-color: #ffcc00; /* Highlight color for the active circle */
+  }
+  
+
+.slide {
+  padding: 100px;
+  & p {
+    margin-block: 30px;
+    color: rgb(0, 0, 0);
+  }
+}
+
+
+.right-textbox {
+   float: right;
+   text-align: right;
+   margin-left: 200px;
+   width: 100%;
+}
+
+.left-textbox {
+  float: left;
+  text-align: left;
+  width: 100%;
+}
+
+.fade-text {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 2s ease, transform 2s ease;
+}
+
+/* Fade-in effect when the text becomes visible */
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* BulletList.css */
+.bullet-list {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+}
+
+.bullet-item {
+  text-align: left;
+}
+
+.circle-title {
+  display: flex;
+  align-items: center; /* Centers vertically */
+  gap: 10px;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(206, 206, 77);
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+  color:white;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+}
+
+.text {
+  padding-block-start: 50px;
+  font-size: 25px;
+  color: gray;
+  margin-top: 0px;
+  transition: transform 0.3s ease, color 0.3s ease ;
+}
+
+.text:hover {
+  color: black;
+  transform: translateY(5px);
+}

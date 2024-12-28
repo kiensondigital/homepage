@@ -1,25 +1,55 @@
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+import React from 'react';
+import Hero from './components/Hero';
+import DescriptionBlocks from './components/Description'
+import Services from './components/Services';
+import Contact from './components/Contact';
+import Contactform from './components/Message';
+import Footer from './components/Footer';
+
+import CompanyInfo from './components/Company';
+import Profile from './components/Profile';
+
+import MouseFollowCircle from './components/mouse';
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import './App.css';
+
+const Home = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Hero />
+      <DescriptionBlocks />
+      <Services />
+      <Contact />
+      <Contactform />
+      <Footer />
     </div>
   );
 }
+
+const Team = () => {
+  return (
+    <div>
+      <CompanyInfo />
+      <Profile />
+    </div>
+  )
+}
+
+const App = () => {
+  return (
+    <BrowserRouter>
+        <MouseFollowCircle />
+        <Routes>
+            <Route index element={<Home />} />
+            <Route path='/team' element={<Team />} />
+        </Routes>
+    </BrowserRouter>
+  );
+}
+
 
 export default App;
