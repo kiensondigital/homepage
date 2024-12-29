@@ -25,7 +25,6 @@ const Home = () => {
       <Services />
       <Contact />
       <Contactform />
-      <Footer />
     </div>
   );
 }
@@ -47,6 +46,7 @@ const App = () => {
             <Route index element={<Home />} />
             <Route path='/team' element={<Team />} />
         </Routes>
+        <Footer />
     </BrowserRouter>
   );
 }

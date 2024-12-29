@@ -1,0 +1,86 @@
+.profile-section {
+    width: 100%;
+    display: flex;
+    padding: 50px;
+}
+
+.profile-box {
+    display: flex;
+    flex-direction: row;
+    margin-inline: auto;
+    margin-top: 20px;
+}
+
+.profile-card {
+    height: 500px;
+    width: 400px;
+    background-color: white;
+    margin-inline: 50px;
+    display: flex;
+    flex-direction: column-reverse;
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.profile-card .profile-info-box {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    padding-block-end: 15px;
+    height: 100px;
+    transition: height 0.5s ease;
+}
+
+.profile-card:hover .profile-info-box {
+    height: 250px;
+}
+
+.profile-card .profile-details {
+    opacity: 0;
+    visibility: hidden;
+    margin-top: 0px;
+    line-height: 30px;
+    transition: opacity 0.5s ease, visibility 0.5s linear;
+    display: flex;
+    flex-direction: column;
+}
+.profile-details .profile-name {
+    margin-bottom: 0;
+}
+.profile-details .profile-role {
+    color: rgb(158, 150, 150);
+}
+
+.profile-card:hover .profile-details {
+    opacity: 1;
+    visibility: visible; 
+}
+
+.profile-circle-container {
+    display: flex;
+    transform: translateY(-20px);
+}
+
+.profile-circle {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin-inline: auto;
+    display: flex;   
+    justify-content: center; 
+}
+
+.profile-circle .person-icon {
+    margin-block: auto;
+    font-size: 27px;
+}
+
+.profile-card .linkedIn-logo {
+    color: white;
+    margin-top: 30px;
+    font-size: 50px;
+}

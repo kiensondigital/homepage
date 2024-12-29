@@ -1,0 +1,35 @@
+.company-info {
+    width: 100%;
+    background-color: rgb(34, 49, 61);
+    color: white;
+    display: flex;
+    height: max-content;
+    padding: 50px;
+}
+
+.company-info-box {
+    display: flex;
+    flex-direction: row;
+    margin-inline: auto;
+    margin-top: 20px;
+}
+.company-description {
+    vertical-align: middle;
+    height: min-content;
+    max-width: 600px;
+    margin-right: 50px;
+}
+.company-description .image-container {
+    height: 100%;
+    width: auto;
+    background-color: red;
+}
+
+.company-description h2 {
+    font-size: 30px;
+    margin-block-end: 20px;
+}
+
+.company-description p {
+    margin-block-end: 20px;
+}

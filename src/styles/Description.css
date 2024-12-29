@@ -3,9 +3,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50px;
+  padding-top: 50px;
   overflow: hidden; /* Ensure overlay fits within container boundaries */
-
 }
 
 /* Ensure other elements within .description-container are above the overlay */
