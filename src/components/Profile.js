@@ -4,6 +4,9 @@ import React from "react";
 import '../styles/Profile.css'
 
 const Card = ({ name, role, descr, linkedIn }) => {
+    const openLink = () => {
+        window.open(linkedIn)
+    }
     return (
         <div  className="profile-card">
             <div className="profile-info-box">
@@ -12,7 +15,7 @@ const Card = ({ name, role, descr, linkedIn }) => {
                 <div class="profile-details">
                     <span className="profile-role"> {role} </span>
                     <span> {descr} </span>
-                    <span> <FaLinkedin class="linkedIn-logo"/> </span>
+                    <span onClick={openLink}> <FaLinkedin class="linkedIn-logo"/> </span>
                 </div>
             </div>
             <div className="profile-picture-container"> <img alt="profile-picture"/></div>
@@ -25,13 +28,13 @@ const Profile = () => {
         {
             "name": "Leo Robinson",
             "role": "Developer",
-            "descr": "Bla bla bla ...",
-            "linkedIn": "link"
+            "descr": "Webdevelopment / Security / SEO",
+            "linkedIn": "https://www.linkedin.com/in/leo-robinson-437a46283/"
         },
         {
             "name": "Jan Kienberger",
-            "role": "Buisness Manager",
-            "descr": "Bla bla bla ...",
+            "role": "Buisness Managment",
+            "descr": "Financhials / Legal / Customer Support",
             "linkedIn": "link"
         }
     ]

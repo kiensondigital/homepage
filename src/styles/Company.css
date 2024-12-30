@@ -4,14 +4,15 @@
     color: white;
     display: flex;
     height: max-content;
-    padding: 50px;
+    padding: 0px;
 }
 
 .company-info-box {
     display: flex;
     flex-direction: row;
     margin-inline: auto;
-    margin-top: 20px;
+    margin-block-start: 150px;
+    margin-block-end: 100px;
 }
 .company-description {
     vertical-align: middle;
