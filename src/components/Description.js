@@ -5,11 +5,11 @@ import Flowchart from '../svgs/flowchart.svg'
 
 const SalesSlide = () => {
   return (
-    <div className="slide">
+    <div className="slide sales">
       <div className="slide-content">
-      <img src={Flowchart} style={{ marginBlockStart:50, marginInlineEnd:40 }}/>
+      <img id="sales-flowchart" src={Flowchart} style={{ marginBlockStart:50, marginInlineEnd:40 }}/>
         <div className="text-content left-textbox" style={{marginBlockStart:55}}>
-          <h2 className="fade-text">SEO - Search Engine Optimization</h2>
+          <h2 className="fade-text"> Digital Solutions </h2>
           <p className="fade-text"> From Frontend designs, to Backend Full stack infastruktur we offer a wide variety of Services including <b>Database</b> Setups, <b>Payment Systems</b>, <b>Web Security</b> Reviews and Search Engine Optimization (<b>SEO</b>) </p>
         </div>
       </div>

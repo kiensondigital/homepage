@@ -102,13 +102,11 @@ const MyGlobe = () => {
   );
 };
 
-
-
 const Hero = () => {
   return (
     <section className="plannet-section">
+      <Navbar />
       <div className="plannet-banner">
-        <Navbar />
         <div className="plannet-texbox">
           <h1> KienSon </h1>
           <h2> Digital </h2>

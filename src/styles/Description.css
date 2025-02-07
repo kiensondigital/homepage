@@ -201,3 +201,19 @@
   color: black;
   transform: translateY(5px);
 }
+
+
+@media screen and (max-width: 10px) {
+  .slide.sales {
+    .slide-content {
+      display: flex;
+      flex-direction: column;
+    }
+    & img {
+      margin-block-start: 0;
+    }
+  }
+}
+
+
+  
