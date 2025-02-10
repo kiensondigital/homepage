@@ -198,8 +198,6 @@
   transform: translateY(5px);
 }
 
-
-
 @media screen and (max-width: 1200px) {
   .description-block{
     height: fit-content;

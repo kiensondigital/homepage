@@ -93,8 +93,9 @@
 }
 
 @media (max-width:768px) {
-    .pricing-cards{
+    .pricing-cards {
         flex-direction: column;
+        align-items: center;
     }
 }
 

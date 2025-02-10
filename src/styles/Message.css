@@ -49,3 +49,21 @@
 .msg-btn:hover {
     background-color: rgb(249, 247, 245);;
 }
+
+
+
+@media screen and (max-width: 1050px) {
+    .contact-form {
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .form-container{
+        width: 100%;
+    }
+
+    .input-field {
+        width: 95%;
+    }
+}
+
