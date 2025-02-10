@@ -7,7 +7,7 @@ const SalesSlide = () => {
   return (
     <div className="slide sales">
       <div className="slide-content">
-      <img id="sales-flowchart" src={Flowchart} style={{ marginBlockStart:50, marginInlineEnd:40 }}/>
+      <img id="sales-flowchart" src={Flowchart} />
         <div className="text-content left-textbox" style={{marginBlockStart:55}}>
           <h2 className="fade-text"> Digital Solutions </h2>
           <p className="fade-text"> From Frontend designs, to Backend Full stack infastruktur we offer a wide variety of Services including <b>Database</b> Setups, <b>Payment Systems</b>, <b>Web Security</b> Reviews and Search Engine Optimization (<b>SEO</b>) </p>
@@ -25,7 +25,7 @@ const BulleSlide = () => {
   ];
 
   return (
-    <div className="slide">
+    <div className="slide info">
       <div className="slide-content">
         <div className="fade-text bullet-list">
           {items.map((item, index) => (
@@ -45,7 +45,7 @@ const BulleSlide = () => {
 
 const SeoSlide = () => {
   return (
-    <div className="slide">
+    <div className="slide ">
       <div className="slide-content">
         <RocketIcon className="svg-animation" style={{ height: "400px", width: "400px", margin: "0" }} />
         <div className="text-content left-textbox">
