@@ -3,7 +3,7 @@
     margin-top: 50px;
     padding-top: 20px;
     position: relative;
-    top: -5px; /* Adjust this value to ensure the wave and section connect */
+    top: -5px; 
 }
 
 .pricing-cards {
@@ -97,5 +97,9 @@
         flex-direction: column;
         align-items: center;
     }
+    .card-container {
+        width: 350px;
+    }
 }
+
 

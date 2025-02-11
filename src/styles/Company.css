@@ -14,16 +14,19 @@
     margin-block-start: 150px;
     margin-block-end: 100px;
 }
+
 .company-description {
     vertical-align: middle;
     height: min-content;
     max-width: 600px;
     margin-right: 50px;
+    margin-inline: 50px;
 }
-.company-description .image-container {
+
+.image-container {
     height: 100%;
     width: auto;
-    background-color: red;
+    margin-right: 60px;
 }
 
 .company-description h2 {
@@ -33,4 +36,22 @@
 
 .company-description p {
     margin-block-end: 20px;
+}
+
+
+@media screen and (max-width: 700px) {
+    .company-info-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+
 }

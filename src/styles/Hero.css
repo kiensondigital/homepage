@@ -22,11 +22,11 @@
 @keyframes fadeInFromLeft {
     0% {
       opacity: 0;
-      transform: translateX(-20px); /* Start from the left */
+      transform: translateX(-20px); 
     }
     100% {
       opacity: 1;
-      transform: translateX(0); /* End at the original position */
+      transform: translateX(0); 
     }
 }
 

@@ -8,12 +8,12 @@
     margin: 0;
     padding: 0;
     position: relative;
-    top: -10px; /* Adjust this value as needed to remove the gap */
+    top: -10px; 
 }
 
-/* Ensure any elements within #Contact don’t add spacing */
+
 .social-icon-list {
-    margin: 0; /* Remove any default margins */
+    margin: 0; 
 }
 
 
@@ -39,7 +39,6 @@
 .social-icon-list{
     height: 100px;
     width: 500px;
-    /* border: 1px solid #000; */
     border-radius: 20px;
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -47,7 +46,7 @@
     align-items: center;
     column-gap: 20px;
     padding:  20px;
-    /* box-shadow: var(--container-shadow); */
+    
     background-color: var(--container-bg-color);
     margin-block: 50px;
 }
@@ -70,13 +69,13 @@
   }
   
   .icon-group .MuiSvgIcon-root {
-    font-size: 24px; /* Adjust the icon size */
+    font-size: 24px; 
     transition: transform 0.3s ease, opacity 0.3s ease;
   }
   
   .icon-group:hover .MuiSvgIcon-root {
-    transform: scale(1.1); /* Slight zoom on hover */
-    opacity: 1; /* Ensure full visibility */
+    transform: scale(1.1); 
+    opacity: 1; 
   }
   
 
@@ -148,6 +147,7 @@
 .icon-group:nth-child(4) .icon-bg{
     background-color:  var(--youtube-color);
 }
+
 @media (max-width:768px) {
     .social-icon-list{
         height: 250px;
