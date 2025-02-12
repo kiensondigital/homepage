@@ -87,7 +87,7 @@ const DescriptionBlocks = () => {
       setIsVisible(anyVisible);
     };
 
-    const observer = new IntersectionObserver(handleScroll, { threshold: 0.3 });
+    const observer = new IntersectionObserver(handleScroll, { threshold: 0.1 });
 
     refs.current.forEach((ref) => {
       if (ref) observer.observe(ref);

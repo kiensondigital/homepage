@@ -96,3 +96,18 @@
         margin-top: 50px;
     }
 }
+
+
+@media screen and (max-width: 768px) {
+    .profile-section {
+        margin-top: 70px;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    .profile-box {
+        margin-inline: 0;
+    }
+}
+
