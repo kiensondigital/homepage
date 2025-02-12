@@ -11,19 +11,16 @@
 .slide-content, .progress-indicator {
   position: relative;
   z-index: 1;
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
 }
 
 
 .description-box {
   position: relative; 
   width: 90%;
-}
-
-.slide-content {
-  display: flex;
-  align-items: center;
-  max-width: 1200px;
-  width: 100%;
 }
 
 .svg-animation {
@@ -230,6 +227,7 @@
 
 @media screen and (max-width: 600px) {
   .slide.sales #sales-flowchart {
-    display: none;
+    display: none;    
   }
+
 }

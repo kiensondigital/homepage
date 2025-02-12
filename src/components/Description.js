@@ -45,7 +45,7 @@ const BulleSlide = () => {
 
 const SeoSlide = () => {
   return (
-    <div className="slide ">
+    <div className="slide">
       <div className="slide-content">
         <RocketIcon className="svg-animation" style={{ height: "400px", width: "400px", margin: "0" }} />
         <div className="text-content left-textbox">
