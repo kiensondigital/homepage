@@ -74,9 +74,9 @@
 }
 .progress-indicator {
   position: fixed; 
-  left: 10px; 
-  top: 50%; 
-  transform: translateY(-50%); 
+  left: 20px; 
+  top: 25%; 
+  transform: translateX(-50%); 
   height: 50vh; 
   z-index: 1000; 
   display: flex; 
