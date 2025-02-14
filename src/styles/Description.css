@@ -227,7 +227,19 @@
 
 @media screen and (max-width: 600px) {
   .slide.sales #sales-flowchart {
-    display: none;    
+    width: 190%; 
   }
 
+  .slide {
+    font-size: 1.6rem;
+  }
+
+  .text-content {
+    all: unset;
+    text-align: left;
+    width: 180%;
+  }
+  .slide.info .bullet-list .title {
+    font-size: 1.7rem;
+  }
 }

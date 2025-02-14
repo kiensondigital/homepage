@@ -44,3 +44,15 @@
     color: rgb(204, 196, 196);
     animation: fadeInFromLeft 1s ease forwards;
 }
+
+
+@media screen and (max-width: 600px) {
+    .plannet-texbox {
+        height: 100%;
+        width: 100%;
+    }
+    .plannet-texbox h1 {
+        margin-top: 300px;
+    }
+}
+

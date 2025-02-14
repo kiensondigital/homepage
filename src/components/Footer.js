@@ -16,10 +16,11 @@ const Footer = () => {
         <div className="footer-section links">
           <h2>Quick Links</h2>
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="/kienson#home">Home</a></li>
+            <li><a href="/kienson#services">Services</a></li>
+            <li><a href="/kienson#about">About</a></li>
+            <li><a href="/kienson#contact">Contact</a></li>
+            <li><a href="/kienson/team">Team</a></li>
           </ul>
         </div>
 

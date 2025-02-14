@@ -40,7 +40,7 @@ const Team = () => {
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/kienson'>
         <MouseFollowCircle />
         <Routes>
             <Route index element={<Home />} />

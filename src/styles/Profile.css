@@ -107,17 +107,18 @@
 }
 
 @media screen and (max-width: 500px) {
+    /* not centered properly */
     .profile-card{
-        margin-inline: 0px;
+        margin-inline: auto;
         width: 100%;
-        float: center;
+        float: none;
     }
     .profile-section {
         padding: 10px;
 
     }
     .profile-box {
-        margin: 0px;
-        align-items: center;
+        margin: auto;
     }
 }
+
