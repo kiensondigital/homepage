@@ -7,7 +7,7 @@ const SalesSlide = () => {
   return (
     <div className="slide sales">
       <div className="slide-content">
-      <img id="sales-flowchart" src={Flowchart} />
+      <img id="sales-flowchart" src={Flowchart} alt="Flowchart"/>
         <div className="text-content left-textbox" style={{marginBlockStart:55}}>
           <h2 className="fade-text"> Digital Solutions </h2>
           <p className="fade-text"> From Frontend designs, to Backend Full stack infastruktur we offer a wide variety of Services including <b>Database</b> Setups, <b>Payment Systems</b>, <b>Web Security</b> Reviews and Search Engine Optimization (<b>SEO</b>) </p>
@@ -62,7 +62,6 @@ const descriptions = [<SalesSlide />,<BulleSlide />, <SeoSlide />];
 const DescriptionBlocks = () => {
   const refs = useRef([]);
   const [activeIndex, setActiveIndex] = useState(0);
-  const [isVisible, setIsVisible] = useState(false);
   const [isAboutVisible, setIsAboutVisible] = useState(false); // To track About section visibility
 
   useEffect(() => {
@@ -84,7 +83,6 @@ const DescriptionBlocks = () => {
           });
         }
       });
-      setIsVisible(anyVisible);
     };
 
     const observer = new IntersectionObserver(handleScroll, { threshold: 0.1 });

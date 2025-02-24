@@ -17,7 +17,7 @@ const CompanyInfo = () => {
                         <li> KienSon.Digital@gmail.com  </li>
                     </ul>
                 </div>
-                <div className='image-container'>
+                <div className='image-container' alt="">
                     <img src={Logo}/>
                 </div>  
             </div>
