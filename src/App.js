@@ -44,7 +44,7 @@ const App = () => {
         <MouseFollowCircle />
         <Routes>
             <Route index element={<Home />} />
-            <Route path='/team' element={<Team />} />
+            <Route path='team' element={<Team />} />
         </Routes>
         <Footer />
     </BrowserRouter>
