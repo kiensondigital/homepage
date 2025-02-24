@@ -30,11 +30,11 @@ const Navbar = () => {
 
       {/* Navigation List */}
       <ul className={`nav--list ${isOpen ? 'open' : ''}`}>
-        <li className="nav--item"><a href="/kienson" className="link">Home</a> </li>
-        <li className="nav--item"><a href="/kienson#About" className="link">About</a> </li>
-        <li className="nav--item"><a href="/kienson#Services" className="link">Services</a> </li>
-        <li className="nav--item"><a href="/kienson#Contact" className="link">Contact</a> </li>
-        <li className="nav--item"><a href="/kienson/team" className="link">Team</a></li>
+        <li className="nav--item"><a href="/homepage" className="link">Home</a> </li>
+        <li className="nav--item"><a href="/homepage#About" className="link">About</a> </li>
+        <li className="nav--item"><a href="/homepage#Services" className="link">Services</a> </li>
+        <li className="nav--item"><a href="/homepage#Contact" className="link">Contact</a> </li>
+        <li className="nav--item"><a href="/homepage/team" className="link">Team</a></li>
       </ul>
     </nav>
   );
