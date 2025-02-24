@@ -18,7 +18,7 @@ const CompanyInfo = () => {
                     </ul>
                 </div>
                 <div className='image-container' alt="">
-                    <img src={Logo}/>
+                    <img src={Logo} alt="company logo"/>
                 </div>  
             </div>
         </div>

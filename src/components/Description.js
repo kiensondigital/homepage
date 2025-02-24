@@ -66,10 +66,8 @@ const DescriptionBlocks = () => {
 
   useEffect(() => {
     const handleScroll = (entries) => {
-      let anyVisible = false;
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          anyVisible = true;
           setActiveIndex(entry.target.dataset.index);
           entry.target.classList.add('visible');
 
