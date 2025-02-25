@@ -40,7 +40,7 @@ const Team = () => {
 
 const App = () => {
   return (
-    <BrowserRouter basename='/homepage'>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
         <MouseFollowCircle />
         <Routes>
             <Route index element={<Home />} />

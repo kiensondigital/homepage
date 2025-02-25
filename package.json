@@ -1,7 +1,7 @@
 {
   "name": "webdesign-homepage",
   "version": "0.1.0",
-  "homepage": "https://kiensondigital.github.io/homepage/",
+  "homepage": "http://kiensondigital.github.io/homepage/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.13.5",
