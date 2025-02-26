@@ -13,7 +13,7 @@ import Profile from './components/Profile';
 
 import MouseFollowCircle from './components/mouse';
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 import './App.css';
 
@@ -40,14 +40,14 @@ const Team = () => {
 
 const App = () => {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter basename={process.env.PUBLIC_URL}>
         <MouseFollowCircle />
         <Routes>
             <Route index element={<Home />} />
-            <Route path='team' element={<Team />} />
+            <Route path='/team' element={<Team />} />
         </Routes>
         <Footer />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
