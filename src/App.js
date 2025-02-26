@@ -38,13 +38,18 @@ const Team = () => {
   )
 }
 
+const Test = () => {
+  return <h1> Test </h1>
+}
+
 const App = () => {
   return (
-    <HashRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter>
         <MouseFollowCircle />
         <Routes>
             <Route index element={<Home />} />
             <Route path='/team' element={<Team />} />
+            <Rout path='test' element={<Test />} />
         </Routes>
         <Footer />
     </HashRouter>
