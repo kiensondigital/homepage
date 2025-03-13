@@ -84,11 +84,14 @@
   justify-content: space-between; 
   opacity: 0; 
   transition: opacity 0.3s ease; 
+  user-select: none;
+  pointer-events: none;
 }
   
 .progress-indicator.visible {
   opacity: 1; 
 }
+
 
 .progress-indicator::before {
   content: '';

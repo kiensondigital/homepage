@@ -8,6 +8,8 @@ import Contact from './components/Contact';
 import Contactform from './components/Message';
 import Footer from './components/Footer';
 
+import Navbar from './components/Navbar'
+
 import CompanyInfo from './components/Company';
 import Profile from './components/Profile';
 
@@ -20,6 +22,7 @@ import './App.css';
 const Home = () => {
   return (
     <div>
+      <Navbar color="black"/>
       <Hero />
       <DescriptionBlocks />
       <Services />
@@ -32,6 +35,7 @@ const Home = () => {
 const Team = () => {
   return (
     <div>
+      <Navbar color="rgb(34, 49, 61)"/>
       <CompanyInfo />
       <Profile />
     </div>

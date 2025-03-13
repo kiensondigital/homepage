@@ -66,17 +66,17 @@
 .icon-group {
     display: flex;
     align-items: center;
-  }
+}
   
-  .icon-group .MuiSvgIcon-root {
-    font-size: 24px; 
+.icon-group .MuiSvgIcon-root {
+    font-size: 24px;
     transition: transform 0.3s ease, opacity 0.3s ease;
-  }
+}
   
-  .icon-group:hover .MuiSvgIcon-root {
+.icon-group:hover .MuiSvgIcon-root {
     transform: scale(1.1); 
-    opacity: 1; 
-  }
+    opacity: 1;
+}
   
 
 

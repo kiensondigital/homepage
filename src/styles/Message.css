@@ -1,6 +1,5 @@
 .contact-form {
     margin: 100px;
-
     display: flex;
     justify-content: center;
     background-color: rgb(235, 231, 226);
@@ -63,7 +62,22 @@
     }
 
     .input-field {
-        width: 95%;
+        width: 100%;
+        margin-inline: 0;
+    }
+
+    .msg-btn {
+        width: 100%;
+    }
+
+    .message-field {
+        width: 100%;
+    }
+}
+
+@media  screen and (max-width: 700px) {
+    .contact-form {
+        padding: 20px;
     }
 }
 

@@ -1,13 +1,11 @@
 import React from 'react';
 import Logo from '../img/Logo.jpeg'
-import Navbar from './Navbar';
 import '../styles/Company.css'
 
 
 const CompanyInfo = () => {
     return (
         <div className='company-info'>
-            <Navbar />
             <div className='company-info-box'>
                 <div className='company-description'>
                     <h2> <b> KienSon </b> Digital </h2>

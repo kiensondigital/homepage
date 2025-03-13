@@ -9,7 +9,6 @@ import landTopology from '../assets/land_10m.json';
 import pointsData from '../assets/random-locations.json';
 import texture from '../assets/texture.jpg';
 
-import Navbar from './Navbar'
 
 const min = 1000;
 const max = 4000;
@@ -105,7 +104,6 @@ const MyGlobe = () => {
 const Hero = () => {
   return (
     <section className="plannet-section">
-      <Navbar />
       <div className="plannet-banner">
         <div className="plannet-texbox">
           <h1> KienSon </h1>
